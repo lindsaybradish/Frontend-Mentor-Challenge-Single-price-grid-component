@@ -13,6 +13,8 @@ body{
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
     background-color: #e5eff5;
     border-radius: 5px;
@@ -41,8 +43,7 @@ p, h2 {
 
 .join {
     background-color: white;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-radius: 5px 5px 0 0;
 }
 
 .join h1 {
@@ -99,6 +100,7 @@ p, h2 {
 
 .why {
     background-color: rgb(42, 178, 175, 0.8);
+    border-radius: 0 0 5px 5px;
 }
 
 .why h1 {
@@ -119,10 +121,10 @@ ul {
 @media (min-width: 520px) {
 
     .card {
-        display: flex;
         flex-wrap: wrap;
-        max-width: 650px;
+        max-width: 640px;
         margin: auto;
+        flex-direction: row;
     }
 
     .section {
@@ -131,5 +133,13 @@ ul {
 
     .join {
         flex-basis: 100%;
+    }
+
+    .monthlysub {
+        border-radius: 0 0 0 5px;
+    }
+
+    .why {
+        border-radius: 0 0 5px 0;
     }
 }
